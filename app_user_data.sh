@@ -8,6 +8,7 @@ nvm install 16
 nvm use 16
 npm install -g pm2
 cd ~/
+
 wget https://github.com/theitguycj/3-tier-web-app-using-terraform-aws/archive/refs/heads/master.zip
 unzip master.zip
 cp 3-tier-web-app-using-terraform-aws-master/app-tier app-tier --recursive

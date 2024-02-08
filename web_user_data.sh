@@ -6,7 +6,7 @@ source ~/.bashrc
 nvm install 16
 nvm use 16
 cd ~/
-wget https://github.com/theitguycj/3-tier-web-app-using-terraform-aws/archive/refs/heads/master.zip
+wget https://github.com/Tim275/Tim275-aws-three-tier-web-architecture-IAC/archive/refs/heads/main.zip
 unzip master.zip
 cd 3-tier-web-app-using-terraform-aws-master/
 sed -i 's/LOAD-BALANCER-DNS/${INT-LOAD-BALANCER-DNS}/g' nginx.conf
@@ -20,7 +20,7 @@ cd /etc/nginx
 sudo rm nginx.conf
 sudo cp ~/3-tier-web-app-using-terraform-aws-master/nginx.conf nginx.conf
 sudo service nginx restart
-chmod -R 755 /home/ec2-user
+chmod -R 777 /home/ec2-user
 sudo chkconfig nginx on
 
 EOF

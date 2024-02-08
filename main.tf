@@ -565,7 +565,7 @@ resource "aws_autoscaling_group" "threeta_web_asg" {
   }
 }
 
-
+## Optional, if u have one
 # Part 7: Route 53
 #resource "aws_route53_record" "threeta-domain" {
   #zone_id = data.aws_route53_zone.threeta-selectdomain.zone_id

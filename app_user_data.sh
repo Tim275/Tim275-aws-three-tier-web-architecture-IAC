@@ -30,10 +30,13 @@ USE webappdb;
 CREATE TABLE IF NOT EXISTS transactions(id INT NOT NULL
 AUTO_INCREMENT, amount DECIMAL(10,2), description
 VARCHAR(100), PRIMARY KEY(id));
-INSERT INTO transactions (amount,description) VALUES ('100','bags');
-INSERT INTO transactions (amount,description) VALUES ('200','carts');
-INSERT INTO transactions (amount,description) VALUES ('300','shelves');
-INSERT INTO transactions (amount,description) VALUES ('400','groceries');
-INSERT INTO transactions (amount,description) VALUES ('500','gas');
+INSERT INTO transactions (amount,description) VALUES ('100','Rucksäcke');
+INSERT INTO transactions (amount,description) VALUES ('200','Karren');
+INSERT INTO transactions (amount,description) VALUES ('300','Handschuhe');
+INSERT INTO transactions (amount,description) VALUES ('400','sonstiges');
+INSERT INTO transactions (amount,description) VALUES ('500','sonstiges');
 
 EOF
+
+
+## scirpt for installing and configuring the app tier
